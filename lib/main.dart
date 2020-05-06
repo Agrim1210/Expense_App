@@ -73,10 +73,12 @@ class MyHomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Column(children: <Widget>[
-                        Text(tx.title),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                        Text(tx.title , style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,color: Colors.black),),
                         Text(
-                          tx.date.toString(),
+                          tx.date.toString(),style: TextStyle(color: Colors.brown),
                         ),
                       ])
                     ],
